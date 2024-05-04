@@ -1,6 +1,12 @@
 
 """
-This program .. 
+This program reads the files books.txt and ratings.txt and then for each book, outputs to a file
+named most-similar-books.txt the most similar book and the similarity score
+Excerpt of example output: 
+    People who liked The Hitchhiker's Guide To The Galaxy, also liked Ender's Game. (Score = 0.805)
+    People who liked Watership Down, also liked The Summer Tree. (Score = 0.609)
+    People who liked The Five People You Meet in Heaven, also liked Bone Series. (Score = 0.471)
+    People who liked Speak, also liked My Sister's Keeper. (Score = 0.889)
 """
 
 from recsys import *
@@ -29,15 +35,18 @@ def read_files():
     rating_list = []
 
     # Adding the book title and creating lists within the rating list
-    for i in range(53):
+    book_length = 53
+    user_length = 32
+
+    for i in range(book_length):
         read_book = books_infile.readline().strip()
         book_list.append(read_book)
         rating_list.append([])
 
     # Adding ratings for each book within each rating list
-    for i in range(32):
+    for i in range(user_length):
         ratings_infile.readline()
-        for j in range(53):
+        for j in range(book_length):
             read_rating = ratings_infile.readline().strip()
             rating_list[j].append(int(read_rating))
 
@@ -66,7 +75,7 @@ def calculate_similarity(book_position, rating_list, book_list):
     return most_similar_title, highest_score
 
 
-def output_message():
+def main():
     """Using the above functions, prints the most similar books and their ratings"""
     outfile = open("most-similar-books.txt", "w")
 
@@ -86,4 +95,4 @@ def output_message():
 
 
 if __name__ == "__main__":
-    output_message()
+    main()
