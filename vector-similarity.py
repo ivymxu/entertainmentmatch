@@ -1,7 +1,8 @@
 """
-This program takes two vectors as parameters and calculates the cosine similarity
-Example input: vector1 = [5, 4, 5], vector2 = [0, 4, -5]
-Example output: -0.17301
+Takes two vectors and determines the cosine similarity
+Example: 
+    Input: vector1 = [5, 4, 5], vector2 = [0, 4, -5]
+    Output: -0.17301
 """
 
 import math
@@ -9,10 +10,7 @@ import math
 
 def similarity(vector1, vector2):
     """
-    Returns the cosine similarity between two vectors.  The vectors 
-    must have the same length.  If either vector is all zeros, then the 
-    similarity is defined to be zero.  Vectors are assumed to be lists that
-    contain numbers (ints and floats).
+    Returns the cosine similarity between two vectors
     """
     if len(vector1) != len(vector2):
         raise ValueError("vectors must be same length")
