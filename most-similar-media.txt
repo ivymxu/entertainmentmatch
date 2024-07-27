@@ -1,0 +1,20 @@
+People who liked The Shawshank Redemption, also liked The Dark Knight, with a score of 0.999.
+People who liked The Godfather, also liked The Lord of the Rings: The Fellowship of the Ring, with a score of 0.999.
+People who liked The Dark Knight, also liked The Lord of the Rings: The Return of the King, with a score of 0.999.
+People who liked 12 Angry Men, also liked The Good, the Bad and the Ugly, with a score of 0.997.
+People who liked Schindler's List, also liked The Lord of the Rings: The Fellowship of the Ring, with a score of 0.998.
+People who liked The Lord of the Rings: The Return of the King, also liked The Dark Knight, with a score of 0.999.
+People who liked Pulp Fiction, also liked The Dark Knight, with a score of 0.999.
+People who liked The Good, the Bad and the Ugly, also liked The Shawshank Redemption, with a score of 0.998.
+People who liked The Lord of the Rings: The Fellowship of the Ring, also liked The Godfather, with a score of 0.999.
+People who liked Fight Club, also liked The Lord of the Rings: The Return of the King, with a score of 0.999.
+People who liked Forrest Gump, also liked The Lord of the Rings: The Two Towers, with a score of 1.000.
+People who liked Inception, also liked Se7en, with a score of 1.000.
+People who liked The Lord of the Rings: The Two Towers, also liked Forrest Gump, with a score of 1.000.
+People who liked Star Wars: Episode V - The Empire Strikes Back, also liked One Flew Over the Cuckoo's Nest, with a score of 0.999.
+People who liked The Matrix, also liked Forrest Gump, with a score of 1.000.
+People who liked Goodfellas, also liked Forrest Gump, with a score of 0.999.
+People who liked One Flew Over the Cuckoo's Nest, also liked Star Wars: Episode V - The Empire Strikes Back, with a score of 0.999.
+People who liked Seven Samurai, also liked City of God, with a score of 0.999.
+People who liked Se7en, also liked Inception, with a score of 1.000.
+People who liked City of God, also liked Seven Samurai, with a score of 0.999.

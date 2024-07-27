@@ -3,22 +3,16 @@ Reads the files media.txt and ratings.txt and then for each media, outputs to a 
 named most-similar-media.txt the most similar media and the similarity score
 """
 
-from recsys import *
+from vectorsimilarity import *
 
 
-def format_similar_message(source_media_title,
-                           most_similar_title,
-                           similarity_score):
-    """Function to produce a properly formatted string for output of Problem1."""
+def format_similar_message(source_media_title, most_similar_title, similarity_score):
     result = f'People who liked {source_media_title}, ' + \
-             f'also liked {most_similar_title}. (Score = {similarity_score:.3f})'
+             f'also liked {most_similar_title} with a score of {similarity_score:.3f}.'
     return result
 
 
 def read_files():
-    """Reads the files and stores each media and rating in a list
-    """
-
     media_infile = open("media.txt", "r")
     ratings_infile = open("ratings.txt", "r")
 
@@ -27,7 +21,11 @@ def read_files():
 
     # Adding the media title and creating lists within the rating list
     media_length = len(media_infile.readlines())
-    user_length = len(ratings_infile.readlines()) 
+    user_length = len(ratings_infile.readlines()) // media_length
+
+    # Convert lengths to integers
+    media_infile.seek(0)
+    ratings_infile.seek(0)
 
     for i in range(media_length):
         read_media = media_infile.readline().strip()
@@ -48,8 +46,6 @@ def read_files():
 
 
 def calculate_similarity(media_position, rating_list, media_list):
-    """Determines the highest rating between two media using the similarity function
-    """
     highest_score, new_score = 0, 0
     most_similar_title = 0
 
@@ -65,7 +61,6 @@ def calculate_similarity(media_position, rating_list, media_list):
 
 
 def main():
-    """Prints the most similar media and their ratings"""
     outfile = open("most-similar-media.txt", "w")
 
     # Read the file
