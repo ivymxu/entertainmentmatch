@@ -1,11 +1,6 @@
 """
 Reads the files media.txt and ratings.txt and then for each media, outputs to a file
 named most-similar-media.txt the most similar media and the similarity score
-Excerpt of example output: 
-    People who liked The Hitchhiker's Guide To The Galaxy, also liked Ender's Game. (Score = 0.805)
-    People who liked Watership Down, also liked The Summer Tree. (Score = 0.609)
-    People who liked The Five People You Meet in Heaven, also liked Bone Series. (Score = 0.471)
-    People who liked Speak, also liked My Sister's Keeper. (Score = 0.889)
 """
 
 from recsys import *
